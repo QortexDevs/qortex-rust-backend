@@ -1,0 +1,8 @@
+services:
+  rust-backend:
+    build: ./
+    ports:
+      - "8083:8080"
+    command: ["cargo", "watch", "-x", "run"]
+    volumes:
+      - .:/app
