@@ -9,7 +9,7 @@ use redis::{get_value, set_value, with_connection};
 
 #[get("/hello")]
 async fn hello() -> impl Responder {
-    web::Json(serde_json::json!({ "message": "Hello from Actix WebSS11S" }))
+    web::Json(serde_json::json!({ "message": "Hello from Actix Web" }))
 }
 
 #[get("/all-cookies")]
